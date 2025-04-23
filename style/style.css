@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#logo p{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #474747;
+}
+
+#logo span{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #00ff9d;
+}
+
+#wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul li a{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px 10px;
+    text-decoration: none;
+    background-color: #00ff9d;
+    border: 1px solid #000000;
+    font-size: large;
+    color: #474747;
+    border-radius: 30px;
+    padding: 5px 15px;
+    transition: 0.2s;
+    box-shadow: 0px 4px #474747;
+}
+
+ul li a:hover{
+    transform: translateX(-3px);
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+#hero{
+    width: 100%;
+    margin: 0px;
+    height: 92vh;
+    /* background: url("https://6amcity.brightspotcdn.com/dims4/default/5e5189b/2147483647/strip/true/crop/970x545+0+0/resize/500x281!/quality/90/?url=https%3A%2F%2Fk1-prod-sixam-city.s3.us-east-2.amazonaws.com%2Fbrightspot%2F7e%2F99%2Fd216011540f1841e51de65e3e752%2Fgvl-upstate-vet-02-0.gif") center no-repeat; */
+    background: url("../img/banner.gif") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#hero h1{
+    color: white;
+    font-size: 80px;
+    line-height: 30px;
+    margin-left: 40px;
+    text-shadow: -5px 5px 7px rgba(0, 0, 0, 0.425);
+}
+
+#hero h1 span{
+    color: #00ff9d;
+    font-size: 30px;
+}
+
+#photos{
+    width: 100%;
+}
+
+#gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px 0px;
+}
+
+#gallery img{
+    height: 300px;
+    width: 240px;
+    border-radius: 30px;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+#gallery img:hover{
+    transform: scale(1.6);
+
+}
+
+#services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#services table, th, tr, td{
+    text-align: center;
+    width: 70%;
+    color: #474747;
+    border-radius: 30px;
+    padding:10px;
+    border-spacing: 8px;
+    
+}
+
+td{
+    background-color: #ffffff;
+}
+
+
+#services th{
+    background-color: #00ff9d;
+    border: 0px;
+    font-size: large;
+}
+
+#services th,td{
+    border: 1px solid;
+    box-shadow: -4px 5px #474747;
+    padding: 13px;
+}
+
+#register{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#register form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#register div{
+    margin: 0px 40px;
+}
+
+
+
+h2{
+    color: #474747;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#darkmode{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #474747;
+    padding: 8px;
+    color: #474747;
+    transition: 0.2s;
+}
+
+#darkmode:hover{
+    background-color: #474747;
+    color: #ffffff;
+    
+}
+
+h3 {
+    color: #474747;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px; 
+}
+
+input[type='radio'] {
+    accent-color: #00ff9d;
+}
+
+input[type=text] {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  input[type=text]:focus {
+    border: 2px solid #00ff9d;
+  }
+
+  input[type=date] {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  input[type=date]:focus {
+    border: 2px solid #00ff9d;
+  }
+
+  input[type=text] {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  input[type=text]:focus {
+    border: 2px solid #00ff9d;
+  }
+
+  select:focus > option:checked { 
+    background: #00ff9d !important;
+}
+
+select{
+    border-radius: 30px;
+    height: 30px;
+}
+
+select:hover{
+    border: 2px solid #00ff9d;
+}
+
+input[type=tel] {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  input[type=tel]:focus {
+    border: 2px solid #00ff9d;
+  }
+
+  #sendbutton{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #00ff9d;
+    border: 1px solid #000000;
+    font-size: large;
+    color: #474747;
+    border-radius: 30px;
+    padding: 5px 15px;
+    transition: 0.2s;
+    box-shadow: 0px 4px #474747;
+}
+
+#sendbutton:hover{
+    transform: translateX(-3px);
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+#send{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+::selection {
+    background: #00ff9d;
+    color: #474747;
+  }
+
+  input, select{
+    text-align: center;
+  }
+
+
+  /* DARK MODE */
+
+  body.dark {
+    background-color: #474747;
+    color: #ffffff;
+}
+
+.dark h2, .dark h3{
+    color: #ffffff;
+}
+
+.dark #logo p{
+    color: #ffffff;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+    #hero h1{
+        line-height: 60px;
+        font-size: 55px;
+        margin-left: 10px;
+    }
+    #hero span{
+        line-height: 1px;
+        font-size: 10px;
+    }
+
+    nav{
+        justify-content: center;
+        
+    }
+   ul li a{
+        font-size: 15px;
+        width: 50px;
+        margin: 5px;
+    }
+    nav ul{
+        padding: 0px;
+    }
+
+    #darkmode{
+        margin: 30px;
+    }
+  }

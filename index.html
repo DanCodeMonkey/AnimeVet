@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Anima Vet</title>
+</head>
+<body>
+    <main>
+        <div id="wrap">
+            <nav>
+                <div id="logo"><p>Anima<span>Vet</span></p></div>
+                <ul>
+                    <li><a href="#photos">Fotos</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#register">Cadastro</a></li>
+                </ul>
+
+                <button id="darkmode">🌗 Modo Escuro</button>
+            </nav>
+            <section id="hero">
+                <h1>Clínica AnimaVet <br> <span>A melhor clinica da região</span></h1>
+               
+            </section>
+
+            <section id="photos">
+                <h2>Fotos dos nossos clientes</h2>
+
+                <div id="gallery">
+                    <img src="img/animal00.jpeg" alt="">
+                    <img src="img/animal01.jpg" alt="">
+                    <img src="img/animal02.jpg" alt="">
+                    <img src="img/animal03.png" alt="">
+                </div>
+
+            </section>
+
+            <section id="services">
+                <h2>Nossos Serviçoes</h2>
+
+                <table><thead>
+                    <tr>
+                      <th colspan="2">Serviços</th>
+                    </tr></thead>
+                  <tbody>
+                    <tr>
+                      <td><b>Serviço</b></td>
+                      <td><b>Valor</b></td>
+                    </tr>
+                    <tr>
+                      <td>Banho e Tosa</td>
+                      <td>R$150</td>
+                    </tr>
+                    <tr>
+                      <td>Vacinação</td>
+                      <td>R$50</td>
+                    </tr>
+                    <tr>
+                      <td>Consulta</td>
+                      <td>R$100</td>
+                    </tr>
+                  </tbody>
+                  </table>
+
+            </section>
+
+            <section id="register">
+                <h2>Cadastro</h2>
+
+                <form action="">
+
+                    <div>
+                        <h3>Dados do dono</h3>
+
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" size="30" required>
+                    <br><br>
+
+                    <label for="">Telefone</label><br>
+                    <input type="tel" name="tel" id="tel" maxlength="11" placeholder="(00)99999-9999" required>
+                    <br><br> 
+                    
+                    </div>
+                    
+                    <div>
+                        <h3>Dados do animal</h3>
+                    <label for="nome-pet">Nome do pet</label><br>
+                    <input type="text" name="nome-pet" id="nome-pet">
+                    <br><br>
+
+                    <p>Tipo</p>
+
+                    <input type="radio" id="cachorro" name="tipo" value="cachorro" required>
+                    <label for="cachorro">Cachorro</label><br>
+
+                    <input type="radio" id="gato" name="tipo" value="gato" required>
+                    <label for="gato">Gato</label><br>
+
+                    <input type="radio" id="porquinho-da-india" name="tipo" value="porquinho-da-india" required>
+                    <label for="porquinho-da-india">Porquinho-da-índia</label><br>
+
+                    <br><br>
+
+                    <label for="borndate">Data de nascimento</label><br>
+                    <input type="date" name="borndate" id="borndate" required>
+                    <br><br>
+                    
+                    <label for="">É brabo?</label><br>
+                    <select id="bravo" name="bravo" borndate>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                        <option value="um-pouco">Um pouco</option>
+                    </select>
+                    
+                    </div>
+
+                    <div id="send">
+                        <button type="submit" id="sendbutton">
+                            Cadastrar
+                        </button>
+                    </div>
+                </form>
+                
+            </section>
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+        </div>
+    </main>
+
+
+
+
+
+
+</body>
+</html>
